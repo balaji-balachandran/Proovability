@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "program",
+    "script",
+    "contracts/programs/zkml"
+]
+resolver = "2"

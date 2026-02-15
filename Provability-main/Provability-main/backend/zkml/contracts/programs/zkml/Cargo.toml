@@ -1,0 +1,28 @@
+[package]
+name = "treehacks-zkml"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "treehacks_zkml"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+# Anchor Framework - Updated to 0.31 for Solana 2.0 compatibility
+anchor-lang = "0.31"
+
+# SP1 Verifier for Solana
+# Note: If this version fails, try "0.1.0" or check crates.io for "sp1-solana"
+sp1-solana = "0.1.0" 
+
+# Solana Program - Updated to 2.0 for compatibility with modern dependencies
+solana-program = "2.0"

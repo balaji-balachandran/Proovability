@@ -1,0 +1,13 @@
+# backend/zkml/program/Cargo.toml
+
+[package]
+name = "treehacks-zkml-program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = "3.4.0"
+rand = "0.8"
+rand_chacha = "0.3"
+rand_core = "0.6.4"
+sha2 = "0.10"
